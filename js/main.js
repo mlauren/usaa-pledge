@@ -30,8 +30,6 @@
         });
     }
 
-
-
     var ProgressBar = function(elemSelector) {
         var self = this;
         var element = document.querySelectorAll(elemSelector);
@@ -62,7 +60,7 @@
     window.addEventListener('scroll', function(e) {
         var elem = document.getElementById('leaderboard');
         var rect = elem.getBoundingClientRect();
-        var bottom = (window.pageYOffset || doument.scrollTop);
+        var bottom = (window.pageYOffset || document.scrollTop);
 
         if (window.pageYOffset > rect.bottom) {
             var numCounter = new NumCounter('.pledge-count', {frequency: 1});

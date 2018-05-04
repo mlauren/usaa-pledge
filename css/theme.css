@@ -1,0 +1,463 @@
+/*
+  Base Styles
+*/
+
+html {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/*
+    Constructed
+*/
+
+body {
+    font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial;
+    background-color: #4071b6;
+    font-weight: 500;
+}
+
+/* header wrapper */
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.allcaps {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/*
+    Form Elements
+*/
+.styled-input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4d7abc;
+    background-color: #004b8e;
+    background-clip: padding-box;
+    border: 1px solid #4d7abc;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+select.styled-input {
+    height: calc(2.25rem + 2px);
+}
+
+/*
+    Buttons
+*/
+.button {
+    display: inline-block;
+    font-weight: 400;
+    color: #115eaa;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.button-block {
+    width: 100%;
+}
+
+/*
+    Theme styles
+
+    #4071b6 - hero blue
+    #4d7abc - main section blue lighter
+    #004b8e - input and meter background color
+    #4d7abc - input text color
+    #4071b6 - meter label background color
+    #fff - button background color
+    #5affa8 - counter and meter well color
+*/
+
+
+.header-container {
+
+}
+
+.main {
+    background-color: #4071b6;
+    color: #fff;
+}
+
+.footer {
+    background-color: #fff;
+    color: #4d7abc;
+}
+
+.title {
+    color: #115eaa;
+    font-weight: 500;
+    background-color: white;
+    padding: 10px;
+    font-size: 17px;
+}
+
+/*
+    Menu
+*/
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #86a5d1;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+nav a:visited {
+    color: #86a5d1;
+}
+
+/* 
+    Main
+*/
+.content {
+    background-image: url('../img/recycle-back.png');
+    background-repeat: no-repeat; 
+}
+/*
+    Hero Top
+*/
+
+.masthead {
+    padding: 4em 0;
+}
+.masthead .section-title {
+    font-weight: 200;
+    font-size: 2em;
+    line-height: 1.25em;
+}
+.masthead .checkbox-group {
+    margin-top: 2em;
+}
+
+/*
+    Board Devider
+*/
+.devider {
+    display: none;
+}
+
+/*
+    Leader Board
+*/
+.leaderboard {
+    margin: 0 auto;
+    background-color: #4d7abc;
+}
+.leaderboard-inner.container {
+    padding: 1rem 3rem;
+}
+
+.leaderboard .leaderboard-pledges .section-title {
+    font-size: 1.75em;
+    line-height: 1.15;
+    font-weight: 700;
+    text-align: center;
+}
+
+.leaderboard .leaderboard-pledges .section-title .pledge-count {
+    color: #5affa8;
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+/*
+    Leader Board Progress
+*/
+.leaderboard-progress {
+
+}
+.leaderboard-progress-header .section-title{
+    font-size: 1.25em;
+}
+.leaderboard-progress .progress-list {
+    list-style: none;
+    padding: 0;
+}
+.leaderboard-progress .progress-list li {
+    margin: 10px 0;
+}
+
+/* 
+    Progress Bar / Meter
+*/
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 2rem;
+    font-size: .75rem;
+    background-color: #4d79bc;
+    border-radius: .25rem;
+}
+.progress-label {
+    white-space: nowrap;
+    background-color: #4071b6;
+    color: #0d5396;
+    font-weight: 700;
+    padding: 4px 15px;
+    font-size: 14px;
+    width: 4rem;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #004b8e;
+    transition: width 2s ease;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+span.progress-number {
+    white-space: nowrap;
+    color: #89a7d3;
+    padding: 2px 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/*
+    Footer
+*/
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+
+/*
+    Media Queries
+*/
+
+@media only screen and (min-width: 480px) {
+
+    /*
+        Menu
+    */
+    nav a {
+        float: left;
+        width: 30%;
+        padding: 14px 0;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    /*
+        Menu
+    */
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 42%;
+    }
+
+
+    /* 
+    Main Responsive 
+    */
+
+    .column,
+    .columns {
+        margin-left: 2%;
+    }
+
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0; 
+    }
+
+    .one-half.columns {
+        width: 49%; 
+    }
+
+    .one-third.columns {
+        width: 32%;
+    }
+
+    .two-thirds.columns {
+        width: 58.6666666667%;
+    }
+
+    .masthead-inner.container {
+        max-width: 750px;
+    }
+
+    .leaderboard-inner.container {
+        max-width: 1000px;
+        padding: 1.5rem 0 4rem;
+    }
+
+    /*
+    Leader Board Progress
+    */
+    .leaderboard-progress {
+        background-image: url();
+    }
+    .leaderboard .leaderboard-pledges {
+        padding-right: 2em;
+    }
+    .leaderboard .leaderboard-pledges .section-title .pledge-count {
+        font-size: 9.75rem;
+        font-weight: 600;
+    }
+
+    .leaderboard {
+        /*background-image: url(../img/recycle-circle.png);*/
+        background-repeat: no-repeat;
+        background-position: 44% 50%;
+        overflow: visible;
+    }
+    .leaderboard .leaderboard-pledges .section-title {
+        text-align: center;
+        font-size: 2.75rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1140px) {
+
+
+}
+
+
+/*
+    Helper
+*/
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
